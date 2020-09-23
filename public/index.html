@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Front End com Delete e Update</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark mb-5">
+        <span class="navbar-brand mb-0 h1">Cadastro de Usuário</span>
+    </nav>
+
+    <div class="container">
+        <div class="row" id="row_form">
+            <div class="col-sm">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Nome</label>
+                        <input type="text" class="form-control" id="txtName" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">Digite seu nome.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Email</label>
+                        <input type="text" class="form-control" id="txtEmail">
+                        <small id="emailHelp" class="form-text text-muted">Digite seu email.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Idade</label>
+                        <input type="number" class="form-control" id="txtAge">
+                        <small id="emailHelp" class="form-text text-muted">Digite sua idade.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Telefone</label>
+                        <input type="text" class="form-control" id="txtPhone">
+                        <small id="emailHelp" class="form-text text-muted">Digite seu telefone.</small>
+                    </div>
+                    <button type="submit" id="btnRegister" class="btn btn-primary">Criar</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5" id="usersBoard">
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Editar dados de usuário</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                <form data-form>
+                    <div class="form-group">
+                        <label for="txtNameModal" class="col-form-label">Nome:</label>
+                        <input type="text" class="form-control" id="txtName">
+                    </div>
+                    <div class="form-group">
+                        <label for="txtEmailModal" class="col-form-label">Email:</label>
+                        <input type="text" class="form-control" id="txtEmail">
+                    </div>
+                    <div class="form-group">
+                        <label for="txtAgeModal" class="col-form-label">Idade:</label>
+                        <input type="number" class="form-control" id="txtAge">
+                    </div>
+                    <div class="form-group">
+                        <label for="txtPhoneModal" class="col-form-label">Telefone:</label>
+                        <input type="text" class="form-control" id="txtPhone">
+                    </div>
+                </form>
+                </div>
+                <div class="modal-footer"> 
+                    <button type="button" class="btn btn-primary" id="btnUpdateUser">Salvar alterações</button>
+                    <button type="submit" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous">
+    </script>
+    
+        
+</body>
